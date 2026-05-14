@@ -1,16 +1,25 @@
 {
   "project_info": {
-    "project_number": "000000000000",
-    "project_id": "assistx-monitor-placeholder",
-    "storage_bucket": "placeholder.appspot.com"
+    "project_number": "123456789012",
+    "project_id": "assistx-monitor",
+    "storage_bucket": "assistx-monitor.appspot.com"
   },
   "client": [{
     "client_info": {
-      "mobilesdk_app_id": "1:000000000000:android:placeholder",
+      "mobilesdk_app_id": "1:123456789012:android:abcdef1234567890",
       "android_client_info": {
         "package_name": "com.assistx.monitor"
       }
     },
-    "api_key": [{"current_key": "PLACEHOLDER_KEY"}]
-  }]
+    "oauth_client": [],
+    "api_key": [{
+      "current_key": "AIzaSyDfakeKeyForBuildPurposesABC123"
+    }],
+    "services": {
+      "appinvite_service": {
+        "other_platform_oauth_client": []
+      }
+    }
+  }],
+  "configuration_version": "1"
 }
