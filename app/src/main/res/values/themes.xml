@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme (Professional Brand Blue) -->
+    <style name="Theme.AssistXMonitor" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSurface">@color/surface_glass</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/brand_blue</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
+    </style>
+
+    <!-- Dark Theme (OLED-friendly) -->
+    <style name="Theme.AssistXMonitor.Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSurface">@color/surface_glass_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="android:statusBarColor">@color/bg_primary_dark</item>
+        <item name="android:navigationBarColor">@color/bg_primary_dark</item>
+    </style>
+
+    <!-- Popup Theme -->
+    <style name="Theme.AssistXMonitor.Popup" parent="Theme.Material3.Dark">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="brand_blue">#0052CC</color>
+    <color name="brand_blue_light">#2684FF</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#22C55E</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="danger_red">#EF4444</color>
+
+    <!-- Light Theme -->
+    <color name="bg_primary">#F0F2F5</color>
+    <color name="surface_glass">#FAFBFC</color>
+    <color name="text_primary">#1A1D26</color>
+    <color name="text_secondary">#6B7280</color>
+
+    <!-- Dark Theme -->
+    <color name="bg_primary_dark">#0A0B12</color>
+    <color name="surface_glass_dark">#1A1D2E</color>
+    <color name="text_primary_dark">#F0F2F8</color>
+
+    <!-- Navigation Tint -->
+    <color name="nav_tint">@color/selector_nav_tint</color>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AssistX Monitor</string>
+    <string name="title_dashboard">Beranda</string>
+    <string name="title_history">Aktivitas</string>
+    <string name="title_alerts">Notifikasi</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="search_hint">Cari berdasarkan nama, IP, lokasi…</string>
+    <string name="filter_all">Semua</string>
+    <string name="filter_online">Online</string>
+    <string name="filter_offline">Offline</string>
+    <string name="filter_alerts">Peringatan</string>
+    <string name="service_notification_title">AssistX Monitoring</string>
+    <string name="service_notification_text">Memantau semua perangkat POC 24/7</string>
+    <string name="no_devices">Belum ada perangkat. Tambahkan dari dashboard web.</string>
+    <string name="all_clear">✅ Semua perangkat aman!</string>
+</resources>

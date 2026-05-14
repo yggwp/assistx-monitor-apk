@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:contentPadding="12dp"
+    android:background="@color/surface_glass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01 Jan 2026 10:00"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            tools:text="2026-01-15 10:00" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tvOnline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 online"
+                android:textColor="@color/success_green"
+                android:textSize="12sp"
+                tools:text="5 online" />
+
+            <TextView
+                android:id="@+id/tvOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 offline"
+                android:textColor="@color/danger_red"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                tools:text="0 offline" />
+
+            <TextView
+                android:id="@+id/tvCpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU 45%"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                tools:text="CPU 45%" />
+
+            <TextView
+                android:id="@+id/tvMem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAM 62%"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:layout_marginStart="16dp"
+                tools:text="RAM 62%" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
