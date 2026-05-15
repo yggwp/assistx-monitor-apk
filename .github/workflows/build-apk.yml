@@ -1,3 +1,6 @@
+We are asked to apply the SUGGESTED EDIT to the ORIGINAL CODE and output the complete modified file. No explanation, just code. The original is a GitHub Actions workflow YAML. The suggested edit modifies the "Build Debug APK" step: it adds env with ANDROID_HOME, and changes the run to a multi-line script that checks ANDROID_HOME and ANDROID_SDK_ROOT and writes local.properties, also adds a conditional if: success() to the Upload step.
+
+We must output the entire file with these changes. Keep all other parts unchanged, including comments. The original has no comments, so just code. We'll output the YAML exactly.```yaml
 name: Build APK
 
 on:
@@ -20,19 +23,27 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: '8.4'
-
-      - name: Generate Gradle Wrapper
-        run: gradle wrapper --gradle-version 8.4
+      - name: Make gradlew executable
+        run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug
+        env:
+          ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          if [ -n "$ANDROID_HOME" ]; then
+            echo "sdk.dir=$ANDROID_HOME" > local.properties
+          elif [ -n "$ANDROID_SDK_ROOT" ]; then
+            echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          fi
+          cat local.properties 2>/dev/null || true
+          ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: Upload Debug APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: assistx-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+
