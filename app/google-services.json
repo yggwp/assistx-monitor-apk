@@ -1,25 +1,29 @@
 {
   "project_info": {
-    "project_number": "123456789012",
-    "project_id": "assistx-monitor",
-    "storage_bucket": "assistx-monitor.appspot.com"
+    "project_number": "641691808738",
+    "project_id": "monitoring-683c9",
+    "storage_bucket": "monitoring-683c9.firebasestorage.app"
   },
-  "client": [{
-    "client_info": {
-      "mobilesdk_app_id": "1:123456789012:android:abcdef1234567890",
-      "android_client_info": {
-        "package_name": "com.assistx.monitor"
-      }
-    },
-    "oauth_client": [],
-    "api_key": [{
-      "current_key": "AIzaSyDfakeKeyForBuildPurposesABC123"
-    }],
-    "services": {
-      "appinvite_service": {
-        "other_platform_oauth_client": []
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641691808738:android:534b8bc50567be21627fbb",
+        "android_client_info": {
+          "package_name": "com.assistx.monitor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkQMppyn2j0EthPhCtn9p5sB8DGs8_TyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
       }
     }
-  }],
+  ],
   "configuration_version": "1"
 }
